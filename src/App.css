@@ -1,0 +1,394 @@
+@font-face{
+    font-family:Afacab;
+    src: url(./assets/fonts/Afacad-VariableFont_wght.ttf)
+}
+/*.......................................................................................................*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Afacab;
+}
+/*Caja de comentarios*/
+.comentBox{
+    width: 100%;
+    height: 12.7rem;
+    background-color: rgb(255, 211, 222);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y:hidden;
+    overflow-x: scroll;
+}
+.coment{
+    background-color: rgb(255, 255, 255);
+    width: 9rem;
+    height: 9rem;
+    margin: 1.9rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 0.4rem;
+}
+.personBox{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    
+}
+.personPicturePhoto{
+    width: 40%;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personPhoto{
+    width: 60%;
+}
+.personName{
+    height: 50%;
+    width: 2rem;
+    margin: 0.2rem;
+    text-align: left;
+    align-items: center;
+    line-height:1.5rem;
+    text-overflow: ellipsis;
+}
+.starBox{
+    height: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.starBox img{
+    height: 0.8rem;
+    margin: 0.2rem;
+}
+.comentText{
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 0.6rem;
+    padding-top: 0.2rem;
+}
+/*header*/
+header{
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+.mainMenu{
+    width: 100%;
+    height: 2.2rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggleMenu{
+    display: none;
+    
+}
+.toggleMenuShow{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 246, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.logoBox{
+    width: 5.5rem;
+    height: 100%;
+    display: flex;
+    flex-shrink: 0.6;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0.6rem;
+}
+.logoBox img{
+    width: 1.5rem;
+    filter: brightness(1.2);
+    
+}
+.buttonBox{
+    width: 23.3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnMenu{
+    border: 0.1rem solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    width: 14rem;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    margin-top: 3rem;
+    padding-left:1rem ;
+}
+
+.btnBorder{
+    border: 0.15rem solid rgba(255, 25, 82);
+    background-color: rgba(255, 255, 255, 0);
+    width: 5.1rem;
+    color: rgb(255, 25, 82);
+    font-weight:400;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.btnSolid{
+    border: 0;
+    background-color: rgba(255, 140, 168);
+    width: 5.1rem;
+    font-weight:500;
+    font-size: 15px;
+    padding: 0.15rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.btnBurger{
+    display: none;
+    filter: brightness(0);
+}
+.btnMain{
+    border: 0;
+    background-color: rgb(137, 22, 31);
+    width: 6rem;
+    font-weight:500;
+    font-size: 15px;
+    padding: 0.15rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+/* FrontPage*/
+.frontPage{
+    display: flex;
+    flex-direction: column;
+    background-image: url(.//assets/images/Libros.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.go{
+    color: rgb(255, 255, 255);
+}
+.frontPageInfo{
+    box-shadow: 0px -20px 20px 20px rgb(255, 255, 255);
+    backdrop-filter:blur(1px) brightness(0.6);
+    height: 22rem;
+    padding: 1rem;
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mainTitle{
+    color: rgb(214, 36, 51);
+    font-size: 30px;
+}
+.Inve{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../src/assets/images/Libros.jpg);
+}
+.lola{
+    background-color: rgb(198, 198, 198);
+    width: 80%;
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.lolo{
+    background-color: rgb(198, 198, 198);
+    width: 80%;
+    height: 15rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.mi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+}
+.ma{
+    width: 100%;
+    height: 10rem;
+    background-color: aliceblue;
+    overflow: scroll;
+}
+.botones{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.mainSubTitle{
+    color: aliceblue;
+}
+.mainText{
+    color: aliceblue;
+}
+.mainButtonBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:4rem;
+}
+/*Footer*/
+footer{
+    background-color: rgb(255, 211, 222);
+    color: #070707;
+}
+.footer-container{
+    padding: 2rem;
+}
+.social-icons{
+    width: 44%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    filter: invert(1);
+} 
+.iconFacebook{
+    height: 2.2rem;
+    width: auto;
+}
+.iconInstagram{
+    height: 2.4rem;
+    width: auto;
+}
+.iconWhatsapp{
+    height: 2.2rem;
+    width: auto;
+}
+.infoTitle{
+    margin-bottom: 0.8rem;
+}
+.info-list{
+    list-style: none;
+    font-weight:600;
+}
+@media (max-width:550px) {
+    .buttonBox{
+        display: none;
+    }
+    .btnBurger{
+        display: flex;
+        border: 0;
+        background-color: rgba(250, 235, 215, 0);
+        color: rgb(199, 14, 61);
+        font-size: 25px;
+        padding: 0.5rem;
+    }
+    
+}
+/*Formularios*************************************************************************************/
+.formBox{
+    width: 100%;
+    background-color: rgb(255, 74, 92);
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.formPageDisplay{
+    background-color: rgb(255, 211, 222);
+    height: 75vh;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+.gridServices{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.label{
+    width: 14rem;
+    height: 4rem;
+    padding: 0;
+    color: aliceblue;
+    /* border: solid black 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.label p{
+    font-size: 1.4rem;
+
+}
+.checkbox{
+    display: none;
+}
+.checkbox:checked+label{
+    border: solid rgb(9, 255, 0) 2px;
+}
+
+.formFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+
+/*00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+.sad{
+    color: rgb(255, 242, 245);
+    color: rgb(245, 211, 221);
+    color: rgb(253, 178, 197);
+    color: rgb(255, 140, 168);
+    color: rgb(255, 25, 82);
+    color: rgb(240, 24, 84);
+    color: rgb(199, 14, 61);
+}
