@@ -1,5 +1,4 @@
 import React from 'react'
-import ComentsBox from '../components/ComentsBox';
 import NavBar from '../components/NavBar';
 import FrontPage from '../components/FrontPage';
 import Footer from '../components/Footer';
